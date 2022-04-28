@@ -4,7 +4,8 @@ pipeline{
     stage("Build"){
       steps {
         echo 'running code'
-        sh 'python main.py'
+        sh 'javac semexam.java'
+        sh 'java semexam'
       }
     }
    stage("Test"){
